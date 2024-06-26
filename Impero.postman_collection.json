@@ -1,0 +1,580 @@
+{
+	"info": {
+		"_postman_id": "650147b5-c7c9-4c58-9c32-1fd92ed266e6",
+		"name": "Impero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13044602",
+		"_collection_link": "https://gokulmodi.postman.co/workspace/Team-Workspace~cd396f07-1d53-47ca-89ed-1ed4a6ed2bc3/collection/13044602-650147b5-c7c9-4c58-9c32-1fd92ed266e6?action=share&source=collection_link&creator=13044602"
+	},
+	"item": [
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "create Projects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"new Project\",\r\n    \"description\":\"project management\",\r\n    \"userId\":\"667bfb7296bb1fbbfb18214f\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/project/create-project",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"project",
+								"create-project"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Project By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/project/667c0fc1ef7d29e62d7d6a5b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"project",
+								"667c0fc1ef7d29e62d7d6a5b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"new Project updated\",\r\n    \"description\":\"project management updated\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/project/update-project/667c0fc1ef7d29e62d7d6a5b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"project",
+								"update-project",
+								"667c0fc1ef7d29e62d7d6a5b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/project/delete-project/667c0fc1ef7d29e62d7d6a5b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"project",
+								"delete-project",
+								"667c0fc1ef7d29e62d7d6a5b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update project status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"in-progress\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/project/update-project-status/667c144c6b756b254c3f9575",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"project",
+								"update-project-status",
+								"667c144c6b756b254c3f9575"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All projects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/project/all-projects?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"project",
+								"all-projects"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Create Task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"new Task\",\r\n    \"description\":\"new Task desc\",\r\n    \"projectId\":\"667c144c6b756b254c3f9575\",\r\n    \"assigneeId\":\"667bfb7296bb1fbbfb18214f\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/task/create-task",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"task",
+								"create-task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Task by id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/task/667c1734776df1c3e3dc0e34",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"task",
+								"667c1734776df1c3e3dc0e34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"new Task\",\r\n    \"description\":\"new Task desc updated\",\r\n    \"projectId\":\"667c144c6b756b254c3f9575\",\r\n    \"assigneeId\":\"667bfb7296bb1fbbfb18214f\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/task/update-task/667c1734776df1c3e3dc0e34",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"task",
+								"update-task",
+								"667c1734776df1c3e3dc0e34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/task/delete-task/667c1734776df1c3e3dc0e34",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"task",
+								"delete-task",
+								"667c1734776df1c3e3dc0e34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update task status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"in-progress\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/task/update-task-status/667c171315fc0c424f5e228e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"task",
+								"update-task-status",
+								"667c171315fc0c424f5e228e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All tasks",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\":1,\r\n    \"search\":\"project\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/task/all-tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"task",
+								"all-tasks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "update user",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2JmYjcyOTZiYjFmYmJmYjE4MjE0ZiIsImlhdCI6MTcxOTQwNjI5MCwiZXhwIjoxNzE5NjY1NDkwfQ.AkPlRD3Fc81dyu8ZyUE8oM8bf0mtEjHx8mJ1F3N3Ydk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"123123\",\r\n    \"newPassword\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/user/update-password/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"user",
+								"update-password",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"john doe\",\r\n    \"email\":\"johndoe@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health-check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/health-check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"health-check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
