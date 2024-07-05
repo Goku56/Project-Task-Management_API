@@ -18,6 +18,7 @@ app.use(helmet());
 app.use(morgan('dev'));
 app.use(cors());
 
+//api routes
 app.use('/api', routes)
 
 //error handler should be the last the middleware
